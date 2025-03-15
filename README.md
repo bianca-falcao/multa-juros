@@ -50,10 +50,10 @@ pip install pandas numpy
 
 ### Execução do Script:
 
-Execute o script `analise_financeira.py` no terminal:
+Execute o script `analise.py` no terminal:
 
 ```bash
-python analise_financeira.py
+python analise.py
 ```
 
 O script solicitará:
@@ -74,16 +74,16 @@ O script gerará:
 projeto_financeiro/
 │
 ├── dados/
-│   └── financeiro.xlsx          # Arquivo de dados financeiros
+│   └── financeiro.xlsx          
 │
-├── analise_financeira.py         # Script principal
-├── planilha_geral.xlsx           # Planilha geral gerada
-├── planilhas_selecionar/         # Pasta com planilhas por categoria
-│   ├── planilha_Categoria_A.xlsx
-│   ├── planilha_Categoria_B.xlsx
-│   └── ...
+├── analise.py         
+├── planilha_geral.xlsx           
+├── planilhas_selecionar/         
+├── planilha_Categoria_A.xlsx
+├── planilha_Categoria_B.xlsx
+├── ...
 │
-└── README.md                     # Este arquivo
+└── README.md                     
 ```
 
 ## 📄 Exemplo de Uso
@@ -97,8 +97,8 @@ Data final: 31/12/2023
 
 **Processamento:**
 
-1. O script filtra os registros onde a coluna **Prorrogado** está entre 01/01/2023 e 31/12/2023.
-2. Classifica os valores da coluna **Total.2** como "Selecionar" ou "Não selecionar".
+1. O script filtra os registros onde a coluna **data_pagamento** está entre 01/01/2023 e 31/12/2023.
+2. Classifica os valores da coluna **encargos** como "Selecionar" ou "Não selecionar".
 3. Gera a planilha geral e as planilhas por categoria.
 
 **Saída:**
